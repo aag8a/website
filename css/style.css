@@ -109,7 +109,7 @@ body {
     }
 @font-face {
     font-family: SegoeUIVariable;
-    src: url(/font/Segoe-UI-Variable-Static-Text-Bold.ttf);
+    src: url(font/Segoe-UI-Variable-Static-Text-Bold.ttf);
 }
 div.container{
     width: 1000px;
@@ -150,7 +150,7 @@ div.container p {
 }
 a {
     text-decoration: none;
-    color:white
+    color:white;
 }
 .treeElement {
     border: 2px rgba(1, 27, 110, 0.425) solid;
