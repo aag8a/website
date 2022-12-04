@@ -107,7 +107,10 @@ body {
     border-radius: 100vw;
     background: radial-gradient(50% 50% at 50% 50%, rgba(65, 56, 210, 0.5) 15.62%, rgba(65, 56, 210, 0) 100%);
     }
-
+@font-face {
+    font-family: SegoeUIVariable;
+    src: url(/font/Segoe-UI-Variable-Static-Text-Bold.ttf);
+}
 div.container{
     width: 1000px;
     height: 600px;
@@ -121,7 +124,7 @@ div.container{
     margin: auto;
     background: rgba(0, 10, 43, 0.534);
     border-radius: 25px;
-    font-family: "Segoe UI Variable Text";
+    font-family: SegoeUIVariable;
     font-weight: bold;
     font-size: 20px;
 }
