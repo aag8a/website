@@ -109,7 +109,7 @@ body {
     }
 @font-face {
     font-family: SegoeUIVariable;
-    src: url(/font/Segoe-UI-Variable-Static-Text-Bold.ttf);
+    src: url(https://github.com/aag8a/website/blob/main/font/Segoe-UI-Variable-Static-Text-Bold.ttf);
 }
 div.container{
     width: 1000px;
