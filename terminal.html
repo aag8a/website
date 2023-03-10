@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>aaMaLOS</title>
+    <style>
+        .terminal {
+            --background: black;
+        }
+    </style>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+<script>
+    $('body').terminal({
+        echo: function(what) {
+            this.echo(what);
+        },
+        help: function () {
+            this.echo("echo     Displays messages")
+            this.echo("back     Returns to main page")
+            this.echo("proj     Downloads specific projects")
+            this.echo("help_proj   Displays all available projects")
+        },
+        back: function () {
+            window.open("https://aag8a.github.io/website/", "_blank")
+        },
+        help_proj : function () {
+            this.echo("Available projects:\n\n" +
+                "fscp\n" +
+                "savefix\n" +
+                "modkit\n" +
+                "challenge\n")
+        },
+        proj: function (what) {
+            switch (what) {
+                case "fscp":
+                    this.echo("Fractal Space Config Parser is a small yet powerful tool\n" +
+                        "for editing your progress in Fractal Space. First seen in Mod Kit\n" +
+                        "tool was rewritten and released as standalone app for everyone\n\n" +
+                        "Download here: https://github.com/Angularity-Space/fs-config-parser/releases/tag/v2.0");
+                    break;
+                case "modkit":
+                    this.echo("Fractal Space Mod Kit (FractalModder on start) was a small tool for\n" +
+                        "installing BepInEx and mods for Fractal Space, but for me,\n" +
+                        "it was first app on PyQt6 and QT Designer. Later on\n" +
+                        "I discovered an app for modding Source Engine called 'XBLAH'\n" +
+                        "and I thought 'Well, I want something like that for FS!'\n" +
+                        "And that's how FSMK was born. I rewrote it, included\n" +
+                        "nice theme, released with some Unity Modding tools\n" +
+                        "(Unity Explorer, Asset Studio, UABE) and even made a Linux\n" +
+                        "version!\n\n" +
+                        "Download here: https://github.com/Angularity-Space/Fractal-Space-Modding-Kit");
+                    break;
+                case "challenge":
+                    this.echo("It was spring of 2022, and a guy named PNG Master\n" +
+                        "told me about BepInEx, a modding framework for Unity games.\n" +
+                        "It was really easy framework to use, and I successfully created\n" +
+                        "first FSPC mod ever. The concept of Challenge Mod is easy - \n" +
+                        "You can't Save and Load, you have only one checkpoint (if you die - \n" +
+                        "you start over) and many other features which I don't remember now.\n\n" +
+                        "Download here: https://github.com/Angularity-Space/fractal-space-challenge-mode");
+                    break;
+                case "savefix":
+                    this.echo("My newest app no-one will ever use. Save Fix\n" +
+                        "is my first app, written on something other than\n" +
+                        "Python (It's on C#). The purpose of Save Fix is easy - \n" +
+                        "Fractal Space already has save fixing tools, but,\n" +
+                        "for some great reason, they're not working. This app \n" +
+                        "helps you to delete that old save (with backup or without)\n" +
+                        "and play Fractal Space again. But, IMHO, It would be\n" +
+                        "better idea to convert old save method to new save method.\n" +
+                        "But for now, this fix is better than nothing.\n\n" +
+                        "Download here: https://drive.google.com/file/d/1ymw-PBhtfU4uxxvkR-1pb0JXiOZu5p7C/view?usp=sharing");
+                    break;
+
+            }
+        }
+
+    }, {
+        greetings: 'aaGMaL Operating System [Version 1.0]\n' +
+            '(c) aag8a. All rights reserved.'
+    });
+</script>
+</body>
+</html>
