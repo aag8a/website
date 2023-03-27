@@ -93,19 +93,19 @@ body {
     position: absolute;
     animation: circle1Path 15s infinite, fadeCircleIn 1332ms ease-out;
     border-radius: 100vw;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(12, 119, 255, 0.3) 15.62%, rgba(12, 119, 255, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(255, 51, 51) 15.62%, rgba(12, 119, 255, 0) 100%);
     }
     .circle2{
     position: absolute;
     animation: circle2Path 20s infinite, fadeCircleIn 1332ms ease-out;
     border-radius: 100vw;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 56, 255, 0.3) 15.62%, rgba(12, 119, 255, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(187, 39, 39) 15.62%, rgba(12, 119, 255, 0) 100%);
     }
     .circle3{
     position: absolute;
     animation: circle3Path 30s infinite, fadeCircleIn 1332ms ease-out;
     border-radius: 100vw;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(65, 56, 210, 0.5) 15.62%, rgba(65, 56, 210, 0) 100%);
+    background: radial-gradient(50% 50% at 50% 50%, rgb(201, 52, 52) 15.62%, rgba(65, 56, 210, 0) 100%);
     }
 @font-face {
     font-family: SegoeUIVariable;
@@ -122,7 +122,7 @@ div.container{
     right: 0;
     
     margin: auto;
-    background: rgba(0, 10, 43, 0.534);
+    background: rgba(43, 0, 0, 0.534);
     border-radius: 25px;
     font-family: SegoeUIVariable;
     font-weight: bold;
@@ -156,9 +156,9 @@ a {
     color:white;
 }
 .treeElement {
-    border: 2px rgba(1, 27, 110, 0.425) solid;
+    border: 2px rgba(110, 1, 1, 0.425) solid;
     border-radius: 25px;
-    background-color: rgba(1, 27, 110, 0.425);
+    background-color: rgba(110, 1, 1, 0.425) ;
     padding: 0.5em;
     text-align: center;
     margin: 0.5em;
